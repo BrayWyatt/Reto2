@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">  
+  <head>    
+    <title>Título de la WEB</title>    
+    <meta charset="UTF-8">
+    <meta name="title" content="Título de la WEB">
+    <meta name="description" content="Página personal">    
+    <link href="../estilos/estilos.css" rel="stylesheet" type="text/css"/>    
+    <script src="../js/funciones.js"></script>
+  </head>  
+  <body id="grad">    
+
+    <header>
+      <h1>Reto1 - Contacto</h1>      
+    </header>  
+    
+    <nav>
+      <a href="../index.html">INICIO</a>
+      <a href="Perfil.html">PERFIL</a>
+    </nav>
+    <section id="formulario">      
+        <form class="banda"action="enviar-formulario.php" method="post"><label>Nombre:</label>
+            <input maxlength="50" name="nombre" required size="50" type="text" autofocus placeholder="Escribe tu nombre" /><label>Email:</label>
+            <input name="email" required type="email" placeholder="Escribe tu email" />
+            <label>Teléfono</label>
+            <input name="telefono" pattern="[0-9]{9}" required type="tel" placeholder="XXXXXXXXX" />
+            <label>Tu web:</label>
+            <input name="tu-url" type="url" placeholder="www.miweb.com" />
+            <label form="cars">Seleccionar navegador:</label>
+            <select name="navegador" required>
+            <option value="Chrome">Chrome</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Edge">Edge</option>
+            </select>
+            <label>Aficiones:</label>
+            <input list="aficiones" type="text" />
+            <datalist id="aficiones">
+            <option value="Viajar"></option>
+            <option value="Leer"></option></datalist>
+            <label>Rango:</label>
+            <input max="20" min="5" type="range" />
+            <label>Selecciona tu color favorito:</label>
+            <input name="color-favorito" type="color" />
+            <label>Fecha:</label>
+            <input name="fecha" type="date" />
+            <label>Hora:</label>
+            <input type="time" name="hora">
+            <label>Observaciones:</label>
+            <textarea cols="80" name="observaciones" rows="8">
+            Puedes escribir aquí tus observaciones...</textarea>
+            <input type="submit" value="Enviar" id="enviarContactobtn"/>
+            </form>    
+    </section>
+
+    <footer class="footer">
+        <h4>Avisos legales</h4>
+        <h4>&copy; Copyright 2020 HTML5.</h4>
+    </footer>
+  </body>  
+</html>
